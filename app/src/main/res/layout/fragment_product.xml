@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="myfragments.ProductFragment"
+  android:padding="5dp">
+
+  <!-- TODO: Update blank fragment layout -->
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:scrollbarAlwaysDrawHorizontalTrack="false"
+      android:scrollbarAlwaysDrawVerticalTrack="false">
+
+      <ImageButton
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:id="@+id/imageButton"
+        android:scaleType="fitXY"
+        android:layout_height="120dp"
+        android:layout_width="120dp" />
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtProductName"
+        android:hint="Name" />
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/edtStartPrice"
+        android:hint="Starting Price" />
+
+      <TextView
+        android:text="End Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="18sp" />
+
+      <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dtEndDate" />
+
+      <Button
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitProduct" />
+    </LinearLayout>
+  </ScrollView>
+
+</FrameLayout>
