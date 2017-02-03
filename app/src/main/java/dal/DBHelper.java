@@ -39,6 +39,7 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
     this.context=context;
   }
 
+
   @Override
   public void onCreate(SQLiteDatabase database, ConnectionSource connectionSource) {
     for (Class c : getTableClass()) {
